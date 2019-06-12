@@ -1,8 +1,6 @@
 var start = 8500; // Recommended: 8500
-var end = 9500; // Recommended: 9600
+var end = 9750; // Recommended: 9600
 var semester = 2;
-
-var links = [];
 
 function getInfo(theUrl) {
   var xmlHttp = new XMLHttpRequest();
@@ -19,7 +17,5 @@ function getInfo(theUrl) {
 
 console.log('Fetching progress reports... please wait... ')
 for (var i = start; i <= end; i++) {
-  // console.log(i);
-  getInfo('https://mistar.oakland.k12.mi.us/novi/StudentPortal/Home/PrintProgressReport/2017' + i + '%5ESH2');
-  // console.log(i);
+  getInfo('https://mistar.oakland.k12.mi.us/novi/StudentPortal/Home/PrintProgressReport/2017' + i + '%5ESH' + semester);
 }
