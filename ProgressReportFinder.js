@@ -17,7 +17,7 @@ function getInfo(theUrl) {
   xmlHttp.send(null);
 }
 
-
+console.log('Fetching progress reports... please wait... ')
 for (var i = start; i <= end; i++) {
   // console.log(i);
   getInfo('https://mistar.oakland.k12.mi.us/novi/StudentPortal/Home/PrintProgressReport/2017' + i + '%5ESH2');
